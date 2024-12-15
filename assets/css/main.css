@@ -27,6 +27,7 @@ html, body{
 
 .navbar_logo {
     text-decoration:  none;
+    color: black;
 }
 
 .navbar_link {
