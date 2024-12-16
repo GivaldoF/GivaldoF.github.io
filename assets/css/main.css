@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     caret-color: transparent;
+
 }
 
 .header {
@@ -11,6 +12,10 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+body{
+    font-family: "Public Sans", sans-serif;
 }
 
 .navbar {
@@ -48,6 +53,7 @@
 }
 
 .navbar_item{
+    font-weight: bold;
 
 }
 
@@ -69,20 +75,23 @@ section{
 
 #home{
     background-color: dodgerblue;
+    color: #323232
+    
 }
 
 .Typewriter__wrapper, .Typewriter__cursor{
     color: white;
     font-size: 50px;
-    font-family: "Lato", sans-serif;
 }
 
 #about{
     background-color: crimson;
+    color: #323232
 }
 
 #projects{
     background-color: gold;
+    color: #323232
 }
 
 .projects-content{
@@ -110,9 +119,15 @@ section{
     height: 450px;
     margin: 0px 20px 0px 20px;
 }
+
+#play{
+    color: #323232
+}
+
 #contact{
-    background-color: darkgreen;
+    background-color: greenyellow;
     position: relative;
+    color: #323232
 }
 
 footer{
