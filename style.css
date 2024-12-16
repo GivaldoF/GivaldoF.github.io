@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 20px 50px;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo {
+    text-decoration:  none;
+}
+
+.navbar_link {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar_item:not(:first-child)  {
+    margin-left: 30px;
+}
+
+.navbar_item{
+
+}
+
+
+
+
+
+#container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+#home{
+    background-color: dodgerblue;
+}
+
+#about{
+    background-color: crimson;
+}
+
+#projects{
+    background-color: gold;
+}
+    
+#contact{
+    background-color: darkgreen;
+}
+
+
+
+
+
