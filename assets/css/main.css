@@ -5,7 +5,7 @@
 }
 
 html, body{
-    scroll-behavior: smooth;
+
 }
 
 .header {
@@ -25,9 +25,14 @@ html, body{
     align-items: center;
 }
 
-.navbar_logo {
+.social_icon{
+    margin-left: 3px;
+    width: 32px;
+    height: 32px;
+}
+
+.navbar_social {
     text-decoration:  none;
-    color: black;
 }
 
 .navbar_link {
@@ -52,6 +57,7 @@ html, body{
 #container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
 }
 
