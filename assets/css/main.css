@@ -2,10 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-html, body{
-
+    caret-color: transparent;
 }
 
 .header {
@@ -74,6 +71,12 @@ section{
     background-color: dodgerblue;
 }
 
+.Typewriter__wrapper, .Typewriter__cursor{
+    color: white;
+    font-size: 50px;
+    font-family: "Lato", sans-serif;
+}
+
 #about{
     background-color: crimson;
 }
@@ -81,12 +84,36 @@ section{
 #projects{
     background-color: gold;
 }
-    
+
+.projects-content{
+    background-color: #ffed4b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    overflow-x: scroll;
+    height: 70%;
+    padding: 0px 50px 0px 50px;
+}
+
+.project{
+    width: 400px;
+    height: 500px;
+    justify-items: center;
+    background-color: #fff07b;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.project_cover{
+    width: 300px;
+    height: 450px;
+    margin: 0px 20px 0px 20px;
+}
 #contact{
     background-color: darkgreen;
     position: relative;
 }
-
 
 footer{
     background-color: gray;
@@ -99,9 +126,4 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    
 }
-
-
-

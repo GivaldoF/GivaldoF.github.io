@@ -1,6 +1,8 @@
 var typewriter = new Typewriter('#typewriter', {
     strings: ['Gamer', 'Programmer', 'Game Designer'],
+    skipAddStyles: false,
     autoStart: true,
+    loop: true,
 });
 
 /*
