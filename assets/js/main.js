@@ -1,5 +1,5 @@
 // Anchor links now has a smooth movement
-document.querySelectorAll('.navbar_link, .navbar_logo').forEach(anchor => {
+document.querySelectorAll('.navbar_link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({

@@ -14,27 +14,26 @@
     <title>Givaldo's portfolio</title>
 </head>
 <body>
-    <header class="header">
+    
+<!-- MENU -->
+    <header>
+    <!--<div w3-include-html="includes/menu.html"></div>-->
+    
         <nav class="navbar">
-            
-            <nav class="navbar_socials">
+            <div class="navbar_socials">
                 <a href="https://www.linkedin.com/in/givaldofernandes/" class="navbar_social" target="_blank">
                     <img class="social_icon" src="assets/images/icons/linkedinIcon.png" alt="Linkedin">
                 </a>
-
                 <a href="https://store.steampowered.com/developer/WhiteRoseGames/" class="navbar_social" target="_blank">
                     <img class="social_icon" src="assets/images/icons/steamIcon.png" alt="Steam">
                 </a>
-                
                 <a href="#contact" class="navbar_social" target="_blank">
                     <img class="social_icon" src="assets/images/icons/emailIcon.png" alt="Email">
                 </a>
-
-                <a href="https://github.com/GivaldoF" class="navbar_social"  target="_blank">
+                <a href="https://github.com/GivaldoF" class="navbar_social" target="_blank">
                     <img class="social_icon" src="assets/images/icons/githubIcon.png" alt="Github">
                 </a>
-            </nav>
-            
+            </div>
             <ul class="navbar_menu">
                 <li class="navbar_item"><a href="#home" class="navbar_link">Home</a></li>
                 <li class="navbar_item"><a href="#projects" class="navbar_link">Projects</a></li>
@@ -43,8 +42,9 @@
                 <li class="navbar_item"><a href="#contact" class="navbar_link">Contact</a></li>
             </ul>
         </nav>
+
     </header>
-    
+
  <!-- MAIN CONTENT -->
     <div id="container">
         
@@ -144,7 +144,7 @@
         </section>
         
         <section id="play">
-            <h1>PONG GAME</h1>
+            <h1>Pong Game</h1>
         </section>
         
         <section id="contact">
@@ -154,10 +154,16 @@
     </div>
     
 <!-- SCRIPTS IMPORTS -->
-    <script src="assets/js/main.js"></script>
+<!--
+    <script src="assets/js/w3.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
+-->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="assets/js/typewriter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/card.js"></script>
+    <script src="assets/js/main.js"></script>
+   
 </body>
 </html>
