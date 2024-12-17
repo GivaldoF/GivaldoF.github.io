@@ -11,7 +11,7 @@
     background-size: 100% 115%;
     background-image: url("../images/projects/seeknsnipe/library_capsule_0.png");
     z-index: 0;
-    
+
     display: flex;
     justify-content: center;
 
@@ -60,4 +60,10 @@
     top: 0;
     z-index: 4;
     
+}
+
+.card_link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
