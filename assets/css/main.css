@@ -91,33 +91,29 @@ section{
 
 #projects{
     background-color: gold;
-    color: #323232
+    color: #323232;
 }
 
 .projects-content{
-    background-color: #ffed4b;
+    
+    width: 90%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
     overflow-x: scroll;
-    height: 70%;
-    padding: 0px 50px 0px 50px;
+    perspective: 1500px;
+    background: linear-gradient(white, #efefef);
 }
 
 .project{
     width: 400px;
-    height: 500px;
+    height: 600px;
+    display: flex;
     justify-items: center;
     background-color: #fff07b;
-    padding: 10px 10px 10px 10px;
     border: 1px solid black;
-}
-
-.project_cover{
-    width: 300px;
-    height: 450px;
-    margin: 0px 20px 0px 20px;
 }
 
 #play{
