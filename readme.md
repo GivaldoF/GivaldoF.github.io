@@ -1,4 +1,3 @@
-<<<<<<< HEAD:readme.md
 <h1>Portfólio de GivaldoF</h1>
 
 <p>
@@ -22,6 +21,4 @@ Este projeto é livre para qualquer um utilizar. Pode ser útil como referência
 <p>
 Se você tiver sugestões, melhorias ou encontrar algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request. Toda contribuição é bem-vinda!
 </p>
-=======
 
->>>>>>> eabdfb2f76954ddf357dc1b7717aa3422b9069c8:readme.txt
