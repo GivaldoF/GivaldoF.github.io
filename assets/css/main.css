@@ -101,6 +101,7 @@ section{
     align-items: center;
     justify-content: center;
     perspective: 1500px;
+    overflow-x: scroll;
 }
 
 .project{
@@ -155,4 +156,50 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_item:not(:first-child) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .projects-content {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar_link {
+        font-size: 16px;
+    }
+
+    .projects-content {
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+    }
 }
