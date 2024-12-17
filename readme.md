@@ -1,4 +1,4 @@
-<h1>Givaldo Fernandes's Portfolio</h1>
+<h1>Givaldo Fernandes Portfolio</h1>
 
 <p>
 Welcome to my portfolio! This repository is where I'm reviving my rusty web skills and taking the opportunity to learn more about JavaScript. Feel free to explore and use any part of the code.
