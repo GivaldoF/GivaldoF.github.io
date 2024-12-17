@@ -27,22 +27,42 @@ function rotateToMouse(e, card) {
       circle at
       ${center.x * 2 + bounds.width/2}px
       ${center.y * 2 + bounds.height/2}px,
-      #ffffff55,
+      rgba(255, 255, 255, 0.2),
       #0000000f
     )
   `;
+
+    card.querySelectorAll('.project_cover').forEach((layer, index) => {
+        const depth = index * 10; // Adjust depth based on layer
+        const scale = 1 + (index * 0.05); // Adjust scale based on layer
+        const translateX = center.x / (10 + depth);
+        const translateY = center.y / (10 + depth);
+        layer.style.transform = `
+        translate3d(
+          ${translateX}px,
+          ${translateY}px,
+          ${depth}px
+        )
+        scale(${scale})
+      `;
+        layer.style.boxShadow = `0 ${depth / 2}px ${depth}px rgba(0, 0, 0, 0.2)`;
+    });
 }
 
 $cards.forEach(card => {
     card.addEventListener('mouseenter', () => {
         bounds = card.getBoundingClientRect();
         const onMouseMove = (e) => rotateToMouse(e, card);
-        document.addEventListener('mousemove', onMouseMove);
+        card.addEventListener('mousemove', onMouseMove);
 
         card.addEventListener('mouseleave', () => {
-            document.removeEventListener('mousemove', onMouseMove);
+            card.removeEventListener('mousemove', onMouseMove);
             card.style.transform = '';
-            card.style.background = '';
+            card.querySelector('.glow').style.backgroundImage = '';
+            card.querySelectorAll('.project_cover').forEach(layer => {
+                layer.style.transform = '';
+                layer.style.boxShadow = '';
+            });
         }, { once: true });
     });
 });

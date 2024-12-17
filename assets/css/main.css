@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     caret-color: transparent;
+}
 
+body{
+    font-family: "Public Sans", sans-serif;
 }
 
 .header {
@@ -12,10 +15,6 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-body{
-    font-family: "Public Sans", sans-serif;
 }
 
 .navbar {
@@ -95,25 +94,44 @@ section{
 }
 
 .projects-content{
-    
     width: 90%;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: center;
-    overflow-x: scroll;
+    justify-content: center;
     perspective: 1500px;
-    background: linear-gradient(white, #efefef);
 }
 
 .project{
     width: 400px;
-    height: 600px;
+    height: 700px;
     display: flex;
-    justify-items: center;
-    background-color: #fff07b;
-    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.project_description{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.project_desc_plat{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: smaller;
+    font-weight: lighter;
+    background-color: #00000099;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px;
 }
 
 #play{
