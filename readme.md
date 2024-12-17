@@ -1,24 +1,28 @@
-<h1>Portfólio de GivaldoF</h1>
+<h1>Givaldo Fernandes's Portfolio</h1>
 
 <p>
-Bem-vindo ao meu portfólio! Este repositório é onde estou revivendo minhas habilidades web enferrujadas e aproveitando para aprender mais sobre JavaScript. Sinta-se à vontade para explorar e utilizar qualquer parte do código.
+Welcome to my portfolio! This repository is where I'm reviving my rusty web skills and taking the opportunity to learn more about JavaScript. Feel free to explore and use any part of the code.
+
 </p>
 
-<h2>Objetivo</h2>
+<h2>Objective</h2>
 
 <p>
-Praticar e aprimorar minhas habilidades em desenvolvimento web.
-Aprender e experimentar novas técnicas e funcionalidades em JavaScript.
+To practice and improve my web development skills.
+
+Learn and experiment with new techniques and features in JavaScript.
+
 </p>
 
-<h2>Uso</h2>
+<h2>Usage</h2>
 
 <p>
-Este projeto é livre para qualquer um utilizar. Pode ser útil como referência, inspiração, ou até mesmo para uso em seus próprios projetos.
+This project is free for anyone to use. It can be useful as a reference, inspiration, or even for use in your own projects.
+
 </p>
 
-<h2>Contribuição</h2>
+<h2>Contribution</h2>
 <p>
-Se você tiver sugestões, melhorias ou encontrar algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request. Toda contribuição é bem-vinda!
-</p>
+If you have any suggestions, improvements, or encounter any problems, feel free to open an issue or submit a pull request. All contributions are welcome!
 
+</p>
