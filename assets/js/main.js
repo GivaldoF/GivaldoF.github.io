@@ -9,3 +9,14 @@ document.querySelectorAll('.navbar_link').forEach(anchor => {
     });
 });
 
+// Função para encontrar e imprimir o elemento pai de um objeto com position absolute
+function printOffsetParent(element) {
+    const offsetParent = element.offsetParent;
+    console.log('Offset Parent:', offsetParent);
+}
+
+// Seleciona o elemento com position absolute
+const cardElement = document.querySelector('.card');
+
+// Imprime o elemento pai do card
+printOffsetParent(cardElement);
