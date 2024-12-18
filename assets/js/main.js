@@ -9,5 +9,3 @@ document.querySelectorAll('.navbar_link').forEach(anchor => {
     });
 });
 
-//
-
