@@ -98,50 +98,54 @@ section{
 }
 
 .projects-content{
-    width: 90%;
+    box-sizing: content-box;
+
+    width: 100%;
     height: 80%;
 
     display: flex;
     flex-direction: row;
-    justify-content: left;
-
+    justify-content: center;
 
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    flex-wrap: nowrap;
-    
-    margin-top: 5px;
-    border: 5px solid black;
+    border: 2px solid white;
 }
 
+
 .project{
-    position: relative;
     width: 375px;
-    height: 525px;
-    max-width: 412px;
-    max-height: 577px;
-    height: 100%;
+    height: 98%;
+    aspect-ratio: 5/7;
+    display: flex;
+    align-items: center;
+
+    margin: 2px;
+    flex-direction: column;
+    scroll-snap-align: start;
+
+    border: 2px solid black;
+}
+
+.project-card{
+    position: relative;
+    width: 90%;
     aspect-ratio: 5/7;
 
     display: flex;
-    align-items: center;
     justify-content: center;
-    justify-items: center;
-  
-    margin: 10px;
-    border: 5px solid rgb(143, 133, 0);
+    margin-top: 40px;
+    padding: 0;
+
+
 }
-
 .project_description{
-    
     width: 90%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    margin: 10px;
+    margin: 5px;
 }
 
 .project_desc_plat{
@@ -224,5 +228,10 @@ footer{
 
     .projects-content {
         width: 100%;
+    }
+}
+@media(max-width: 1890px){
+    .projects-content{
+        justify-content: left;
     }
 }
