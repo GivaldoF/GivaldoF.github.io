@@ -1,0 +1,28 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.container{
+    position: fixed;
+    max-width: 90%;
+    height: 50%;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;;
+    overflow-x: scroll;
+    justify-content: flex-start;
+}
+
+.game-details{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 1px solid blue;
+    justify-self: start;
+    flex: 0 0 auto;
+}   
