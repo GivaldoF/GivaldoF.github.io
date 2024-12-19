@@ -98,11 +98,13 @@ section{
 
 .projects-content{
     box-sizing: content-box;
+    min-height: 525px;
     max-width: 90%;
     max-height: 80%;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    scrollbar-color: gold;
 }
 
 .project{
@@ -120,7 +122,7 @@ section{
     position: relative;
     height: 80%;
     aspect-ratio: 5/7;
-    background-color: #00000099;
+
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -189,14 +191,6 @@ footer{
     .projects-header{
         margin-top:50px;
     }
-
-    .projects-content {
-        height: 75%;
-    }
-
-    .project{
-        width: 320px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -212,9 +206,4 @@ footer{
     .navbar_item:not(:first-child)  {
         margin-left: 8px;
     }
-
-    .projects-content {
-        width: 100%;
-    }
 }
-
