@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/teste.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,61 +15,82 @@
 <body>
     <header >
         <!--<div w3-include-html="../includes/menu.html"></div>-->
-        
-        <nav class="navbar">
-            <div class="navbar_socials">
-                <a href="https://www.linkedin.com/in/givaldofernandes/" class="navbar_social" target="_blank">
-                    <img class="social_icon" src="../assets/images/icons/linkedinIcon.png" alt="Linkedin">
-                </a>
-                <a href="https://store.steampowered.com/developer/WhiteRoseGames/" class="navbar_social" target="_blank">
-                    <img class="social_icon" src="../assets/images/icons/steamIcon.png" alt="Steam">
-                </a>
-                <a href="../index.html#contact" class="navbar_social">
-                    <img class="social_icon" src="../assets/images/icons/emailIcon.png" alt="Email">
-                </a>
-                <a href="https://github.com/GivaldoF" class="navbar_social" target="_blank">
-                    <img class="social_icon" src="../assets/images/icons/githubIcon.png" alt="Github">
-                </a>
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item"><a href="../index.html#home" class="navbar_link">Home</a></li>
-                <li class="navbar_item"><a href="../index.html#projects" class="navbar_link">Projects</a></li>
-                <li class="navbar_item"><a href="../index.html#about" class="navbar_link">About</a></li>
-                <li class="navbar_item"><a href="../index.html#play" class="navbar_link">Play</a></li>
-                <li class="navbar_item"><a href="../index.html#contact" class="navbar_link">Contact</a></li>
-            </ul>
+        <div class="navbar-background">
+            <nav class="navbar">
+                <div class="navbar_socials">
+                    <a href="https://www.linkedin.com/in/givaldofernandes/" class="navbar_social" target="_blank">
+                        <img class="social_icon" src="../assets/images/icons/linkedinIcon.png" alt="Linkedin">
+                    </a>
+                    <a href="https://store.steampowered.com/developer/WhiteRoseGames/" class="navbar_social" target="_blank">
+                        <img class="social_icon" src="../assets/images/icons/steamIcon.png" alt="Steam">
+                    </a>
+                    <a href="../index.html#contact" class="navbar_social">
+                        <img class="social_icon" src="../assets/images/icons/emailIcon.png" alt="Email">
+                    </a>
+                    <a href="https://github.com/GivaldoF" class="navbar_social" target="_blank">
+                        <img class="social_icon" src="../assets/images/icons/githubIcon.png" alt="Github">
+                    </a>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="../index.html#home" class="navbar_link">Home</a></li>
+                    <li class="navbar_item"><a href="../index.html#projects" class="navbar_link">Projects</a></li>
+                    <li class="navbar_item"><a href="../index.html#about" class="navbar_link">About</a></li>
+                    <li class="navbar_item"><a href="../index.html#play" class="navbar_link">Play</a></li>
+                    <li class="navbar_item"><a href="../index.html#contact" class="navbar_link">Contact</a></li>
+                </ul>
+            </div>  
         </nav>
-
     </header>
     
-    <!-- MAIN CONTENT -->
-     <div class="parent">
+   <!-- MAIN CONTENT -->
+   <div class="main-container">
         <div class="container">
-            <section class="game-details">
-                <h1>Teste 1</h1>
+            <section class="game-header">
+                <h1>Seek & Snipe</h1>
+                <div class="stores">
+                    <a href="" class="store-link" target="_blank">
+                        <img class="store-icon" src="../assets/images/icons/steamIcon.png" alt="Itch.io">
+                    </a>
+                </div>
+                <!--<img class="game-logo" src="../assets/images/projects/seeknsnipe/logo0.png" alt="Seek and Snipe Logo">-->
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="game-gallery">
+                <div class="main-gallery">
+                    <iframe width="600" height="337" src="https://www.youtube.com/embed/pH7EM-u8TzA?si=N9YPvIu3h2XW8Cmg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="gallery-images">
+                    <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot1.png" alt="Screenshot 1">
+                    <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot2.png" alt="Screenshot 2">
+                    <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot3.png" alt="Screenshot 3">
+                    <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot4.png" alt="Screenshot 3">
+                    <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot5.png" alt="Screenshot 3">
+                </div>
+            </section>
+
+            <!-- Project Description -->
+            <section class="game-description">
+                <h2>Description</h2>
                 <p>Detalhes do jogo Seek and Snipe...</p>
             </section>
-            <section class="game-details">
-                <h1>Teste 2</h1>
-                <p>Detalhes do jogo Seek and Snipe...</p>
+
+            <!-- Technologies Used -->
+            <section class="game-technologies">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Unity</li>
+                </ul>
             </section>
-            <section class="game-details">
-                <h1>Teste 3</h1>
-                <p>Detalhes do jogo Seek and Snipe...</p>
+
+            <!-- Development Process -->
+            <section class="game-development">
+                <h2>Development Process</h2>
+                <p>Informações sobre o processo de desenvolvimento...</p>
             </section>
-            <section class="game-details">
-                <h1>Teste 4</h1>
-                <p>Detalhes do jogo Seek and Snipe...</p>
-            </section>
-            <section class="game-details">
-                <h1>Teste 5</h1>
-                <p>Detalhes do jogo Seek and Snipe...</p>
-            </section>
-            <section class="game-details">
-                <h1>Teste 6</h1>
-                <p>Detalhes do jogo Seek and Snipe...</p>
-            </section>
-        
         </div>
     </div>
     
