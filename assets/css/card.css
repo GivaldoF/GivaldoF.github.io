@@ -18,7 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
+    
 
     transition-duration: 300ms;
     transition-property: transform, box-shadow;
