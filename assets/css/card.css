@@ -27,7 +27,7 @@
     transition-timing-function: ease-out;
     transform: rotate(0);
 
-    border: 3px solid rgb(44, 44, 44);
+    border: 3px solid var(--secundary-color);
 }
 
 .game1{

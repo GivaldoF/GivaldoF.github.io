@@ -24,33 +24,36 @@ body{
 section{
     height: 100vh;
     display: flex;
+    position: relative;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    color: var(--font-color);
+    background-color: var(--primary-color-noalpha);
+
     scroll-snap-align: start;
 }
 
 #home{
-    background-color: dodgerblue;
-    color: #323232
+    font-size: 42px;
+    color: var(--font-color);
     
 }
 
 .Typewriter__wrapper, .Typewriter__cursor{
-    color: white;
+    color: var(--secundary-color);
     font-size: 50px;
 }
 
 #about{
-    background-color: crimson;
-    color: #323232
+  
 }
 
 #projects{
-    background-color: gold;
-    color: #323232;
     padding-top: 20px;
-    border: 1px solid black;
 }
+
 .projects-header{
     text-align: center;
 }
@@ -64,7 +67,7 @@ section{
     flex-direction: row;
     overflow-x: auto;
     margin-top: 5px;
-    background-color: rgba(230, 200, 0);
+    
     border-radius: 10px;
 }
 
@@ -74,12 +77,12 @@ section{
 
 .projects-content::-webkit-scrollbar-thumb{
     border-radius: 50px;
-    background: #dabf29;
+    background: var(--secundary-color);
 }
 
 .projects-content::-webkit-scrollbar-track {
     border-radius: 50px;
-    background: #c2a91a;
+    background: var(--primary-color-darker);
 }
 
 .project{
@@ -91,6 +94,7 @@ section{
     margin: 2px;
     flex-direction: column;
     scroll-snap-align: start;
+    
 }
 
 .project-card{
@@ -103,6 +107,7 @@ section{
     margin-top: 15px;
     padding: 0;
 }
+
 .project_description{
     width: 90%;
     display: flex;
@@ -110,44 +115,47 @@ section{
     align-items: center;
     justify-content: center;
     margin: 10px;
+
+    
 }
 
 .project_desc_plat{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: smaller;
-    font-weight: lighter;
-    background-color: #c2a91a;
+    font-size: small;
+    background-color: var(--primary-color-darker);
     border-radius: 10px;
     padding: 10px;
-    color: white;
+    color: var(--font-color);
     font-weight: bold;
     text-align: center;
     margin: 2px;
+
+    
 }
 
 #play{
-    color: #323232
+    
 }
 
 #contact{
-    background-color: greenyellow;
-    position: relative;
-    color: #323232
+
 }
 
 footer{
-    background-color: var(--primary-color-noalpha);
+    display: flex;
+    position: absolute;
     width: 100%;
     height: 50px;
-    position: absolute;
     bottom: 0;
-    color: var(--font-color);
-    display: flex;
+
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    border: 2px solid var(--sencundary-color);
+    color: var(--font-color);
+    background-color: var(--primary-color-darker);
+
+    z-index: 1000;
 }
 
 /* Media Queries for Responsiveness */
