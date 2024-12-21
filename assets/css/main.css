@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,7 +26,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     scroll-snap-align: start;
 }
 
@@ -49,11 +48,10 @@ section{
 #projects{
     background-color: gold;
     color: #323232;
-
+    padding-top: 20px;
+    border: 1px solid black;
 }
 .projects-header{
-    margin-top: 50px;
-    justify-content: center;
     text-align: center;
 }
 
@@ -65,7 +63,8 @@ section{
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-
+    margin-top: 5px;
+    background-color: rgba(230, 200, 0);
     border-radius: 10px;
 }
 
@@ -137,49 +136,23 @@ section{
 }
 
 footer{
-    background-color: gray;
+    background-color: var(--primary-color-noalpha);
     width: 100%;
     height: 50px;
     position: absolute;
     bottom: 0;
-
+    color: var(--font-color);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    border: 2px solid var(--sencundary-color);
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        padding: 15px;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
-
-    .navbar_item {
-        margin-left: 1px;
-        margin-top: 5px;
-    }
-
     .projects-header{
         margin-top:50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar_menu {
-        align-items: center;
-        align-content: center;
-    }
-
-    .navbar_link {
-        font-size: 16px;
-    }
-
-    .navbar_item:not(:first-child)  {
-        margin-left: 8px;
     }
 }

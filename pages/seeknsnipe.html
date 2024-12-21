@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/root.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/projects.css">
+    
     <link rel="icon" type="image/png" href="../assets/images/icons/favicon.png">
     <title>Seek and Snipe</title>
 </head>
 <body>
+    <div class="page-background">
+        <img class="background-image" src="../assets/images/projects/seeknsnipe/background.png">
+    </div>
     <header >
         <!--<div w3-include-html="../includes/menu.html"></div>-->
         <div class="navbar-background">
             <nav class="navbar">
                 <div class="navbar_socials">
                     <a href="https://www.linkedin.com/in/givaldofernandes/" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/linkedinIcon.png" alt="Linkedin">
+                        <img class="social_icon" src="../assets/images/icons/linkedinIcon_white.png">
                     </a>
                     <a href="https://store.steampowered.com/developer/WhiteRoseGames/" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/steamIcon.png" alt="Steam">
+                        <img class="social_icon" src="../assets/images/icons/steamIcon_white.png">
                     </a>
                     <a href="../index.html#contact" class="navbar_social">
-                        <img class="social_icon" src="../assets/images/icons/emailIcon.png" alt="Email">
+                        <img class="social_icon" src="../assets/images/icons/emailIcon_white.png">
                     </a>
                     <a href="https://github.com/GivaldoF" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/githubIcon.png" alt="Github">
+                        <img class="social_icon" src="../assets/images/icons/githubIcon_white.png">
                     </a>
                 </div>
                 <ul class="navbar_menu">
@@ -41,6 +46,7 @@
     
    <!-- MAIN CONTENT -->
    <div class="main-container">
+    
         <a href="thetravelerspath.html" class="arrow-project right">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
                 <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
@@ -55,12 +61,18 @@
                     <div class="main-gallery">
                         <iframe width="600" height="337" src="https://www.youtube.com/embed/pH7EM-u8TzA?si=N9YPvIu3h2XW8Cmg" frameborder="0" allowfullscreen></iframe>
                     </div>
+
                     <div class="gallery-images">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot1.png" alt="Screenshot 1">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot2.png" alt="Screenshot 2">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot3.png" alt="Screenshot 3">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot4.png" alt="Screenshot 3">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot5.png" alt="Screenshot 3">
+                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot1.png">
+                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot2.png">
+                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot3.png">
+                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot4.png">
+                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot5.png">
+                    </div>
+
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="expandedImage">
                     </div>
                 </section>
 
@@ -72,7 +84,7 @@
                         <p>Locate and eliminate targets using your keen perception and precision skills.</p>
                         <p>Become a legend!</p>
                     </div>
-                    <span><b>Release date:</b> 2022</span>
+                    <span style="margin-top: var(--spacing-unit);"><b>Release date:</b> Coming Soon</span>
                     <div class="tags">
                         <span class="tag">Hidden Objects</span>
                         <span class="tag">Sniper</span>
@@ -83,21 +95,9 @@
                         
                     <h2> Where to Find?</h2>
                     <div class="stores">
-                        <a href="" class="store-link" target="_blank">
-                            <img class="store-icon" src="../assets/images/icons/steamIcon.png" alt="Steam Store">
+                        <a href="https://store.steampowered.com/app/2596930/" class="store-link" target="_blank">
+                            <img class="store-icon" src="../assets/images/icons/steamIcon_white.png" alt="Steam Store">
                             <span>Steam Store</span>
-                        </a>
-                        <a href="" class="store-link" target="_blank">
-                            <img class="store-icon" src="../assets/images/icons/xboxIcon.png" alt="Xbox Store">
-                            <span>Xbox</span>
-                        </a>
-                        <a href="" class="store-link" target="_blank">
-                            <img class="store-icon" src="../assets/images/icons/switchIcon.png" alt="Nintendo Store">
-                            <span>Nintendo Swtich</span>
-                        </a>
-                        <a href="" class="store-link" target="_blank">
-                            <img class="store-icon" src="../assets/images/icons/playIcon.png" alt="Playstation Store">
-                            <span>Playstation</span>
                         </a>
                     </div>
                 </section>
@@ -116,21 +116,16 @@
                         <p class="tech-name">C#</p>
                     </div>
                     <div class="tech">
-                        <img class="tech-icon" src="../assets/images/icons/riderIcon.png" alt="Rider">
-                        <p class="tech-name">Jetbrains Rider</p>
+                        <img class="tech-icon" src="../assets/images/icons/visualstudioIcon.png" alt="Rider">
+                        <p class="tech-name">Visual Studio</p>
                     </div>
                     <div class="tech">
                         <img class="tech-icon" src="../assets/images/icons/notionIcon.png" alt="Notion">
                         <p class="tech-name">Notion</p>
                     </div>
-                    
                     <div class="tech">
                         <img class="tech-icon" src="../assets/images/icons/githubIcon1.png" alt="Github">
                         <p class="tech-name">Github</p>
-                    </div>
-                    <div class="tech">
-                        <img class="tech-icon" src="../assets/images/icons/gitIcon.png" alt="git">
-                        <p class="tech-name">git</p>
                     </div>
                     <div class="tech">
                         <img class="tech-icon" src="../assets/images/icons/photoshopIcon.png" alt="Photoshop">
@@ -139,10 +134,6 @@
                     <div class="tech">
                         <img class="tech-icon" src="../assets/images/icons/audacityIcon.png" alt="Github">
                         <p class="tech-name">Audacity</p>
-                    </div>
-                    <div class="tech">
-                        <img class="tech-icon" src="../assets/images/icons/rokokoIcon.png" alt="Github">
-                        <p class="tech-name">Rokoko</p>
                     </div>
                 </div>
             </section>
@@ -171,6 +162,6 @@
         w3.includeHTML();
      </script> 
     -->
-    
+    <script src="../assets/js/gallery.js"></script>
 </body>
 </html>

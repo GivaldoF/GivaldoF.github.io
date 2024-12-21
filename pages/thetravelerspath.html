@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/root.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/projects.css">
     <link rel="icon" type="image/png" href="../assets/images/icons/favicon.png">
     <title>Seek and Snipe</title>
 </head>
 <body>
+    <div class="page-background">
+        <img class="background-image" src="../assets/images/projects/thetravelerspath/background.png">
+    </div>
     <header >
         <!--<div w3-include-html="../includes/menu.html"></div>-->
         <div class="navbar-background">
             <nav class="navbar">
                 <div class="navbar_socials">
                     <a href="https://www.linkedin.com/in/givaldofernandes/" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/linkedinIcon.png" alt="Linkedin">
+                        <img class="social_icon" src="../assets/images/icons/linkedinIcon_white.png">
                     </a>
                     <a href="https://store.steampowered.com/developer/WhiteRoseGames/" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/steamIcon.png" alt="Steam">
+                        <img class="social_icon" src="../assets/images/icons/steamIcon_white.png">
                     </a>
                     <a href="../index.html#contact" class="navbar_social">
-                        <img class="social_icon" src="../assets/images/icons/emailIcon.png" alt="Email">
+                        <img class="social_icon" src="../assets/images/icons/emailIcon_white.png">
                     </a>
                     <a href="https://github.com/GivaldoF" class="navbar_social" target="_blank">
-                        <img class="social_icon" src="../assets/images/icons/githubIcon.png" alt="Github">
+                        <img class="social_icon" src="../assets/images/icons/githubIcon_white.png">
                     </a>
                 </div>
                 <ul class="navbar_menu">
@@ -61,12 +65,18 @@
                     <div class="main-gallery">
                         <iframe width="600" height="337" src="https://www.youtube.com/embed/pH7EM-u8TzA?si=N9YPvIu3h2XW8Cmg" frameborder="0" allowfullscreen></iframe>
                     </div>
+
                     <div class="gallery-images">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot1.png" alt="Screenshot 1">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot2.png" alt="Screenshot 2">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot3.png" alt="Screenshot 3">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot4.png" alt="Screenshot 3">
-                        <img class="gallery-image" src="../assets/images/projects/seeknsnipe/screenshot5.png" alt="Screenshot 3">
+                        <img class="gallery-image" src="../assets/images/projects/thetravelerspath/screenshot1.png">
+                        <img class="gallery-image" src="../assets/images/projects/thetravelerspath/screenshot2.png">
+                        <img class="gallery-image" src="../assets/images/projects/thetravelerspath/screenshot3.png">
+                        <img class="gallery-image" src="../assets/images/projects/thetravelerspath/screenshot4.png">
+                        <img class="gallery-image" src="../assets/images/projects/thetravelerspath/screenshot5.png">
+                    </div>
+
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="expandedImage">
                     </div>
                 </section>
 
@@ -78,18 +88,19 @@
                         <p>Locate and eliminate targets using your keen perception and precision skills.</p>
                         <p>Become a legend!</p>
                     </div>
-                    <span><b>Release date:</b> 2022</span>
+                    <span  style="margin-top: var(--spacing-unit);"><b>Release date:</b> 2022</span>
                     <div class="tags">
-                        <span class="tag">Hidden Objects</span>
-                        <span class="tag">Sniper</span>
-                        <span class="tag">3D</span>
-                        <span class="tag">Shooter</span>
                         <span class="tag">Puzzle</span>
+                        <span class="tag">Casual</span>
+                        <span class="tag">For Kids</span>
+                        <span class="tag">3D</span>
+                        
+                       
                     </div>
                         
                     <h2> Where to Find?</h2>
                     <div class="stores">
-                        <a href="" class="store-link" target="_blank">
+                        <a href="https://store.steampowered.com/app/2231550/" class="store-link" target="_blank">
                             <img class="store-icon" src="../assets/images/icons/steamIcon_white.png" alt="Steam Store">
                             <span>Steam Store</span>
                         </a>
@@ -168,6 +179,6 @@
         w3.includeHTML();
      </script> 
     -->
-    
+    <script src="../assets/js/gallery.js"></script>
 </body>
 </html>

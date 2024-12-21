@@ -1,0 +1,10 @@
+:root{
+    --primary-color: rgba(56, 56, 56, 0.7);
+    --primary-color-noalpha: rgb(56, 56, 56);
+    --sencundary-color: #940014;
+    --font-color: #c0c0c0;
+    --font-main: "Public Sans", sans-serif;
+    --spacing-unit: 10px;
+    --spacing-section: 10px;
+    --section-padding: calc(2 * var(--spacing-section));
+}
