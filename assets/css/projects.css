@@ -36,11 +36,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 50px;
     z-index: 1000;
+    
     background-color: var(--primary-color);
-    border: 3px solid var(--secundary-color);
 }
-
 /* BACKGROUND */
 .page-background {
     position: fixed;
@@ -356,8 +356,20 @@ header {
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: var(--section-padding);
-
     border: 2px solid var(--secundary-color);
+}
+
+.development-text{
+    padding: var(--spacing-unit);
+}
+
+.highlight{
+    color: var(--secundary-color);
+    font-weight: bold;
+}
+
+li{
+    margin-top: 10px;
 }
 
 footer{
