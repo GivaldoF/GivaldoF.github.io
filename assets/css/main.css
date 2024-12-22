@@ -36,14 +36,36 @@ section{
 }
 
 #home{
+    display: flex;
+    flex-direction: row;
+}
+
+.home_text{
+    display: flex;
+    flex-direction: column;
     font-size: 42px;
     color: var(--font-color);
+    text-align: left;
+ 
+    margin-right: 200px;
+
+   
     
+}
+.home_photo{
+    width: 350px;
+    height: 350px;
+    border: 1px solid white;
+    background: url("/assets/images/self.png");
+    background-size: cover;
+    border-radius: 175px;
+    border: 3px solid var(--secundary-color);
 }
 
 .Typewriter__wrapper, .Typewriter__cursor{
     color: var(--secundary-color);
     font-size: 50px;
+    font-weight: 500;
 }
 
 #about{
