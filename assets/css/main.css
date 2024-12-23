@@ -165,8 +165,6 @@ h1{
 
 .contact_methods{
     display: flex;
-    width: 20%;
-    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
 }
