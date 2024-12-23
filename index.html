@@ -39,7 +39,6 @@
                 <li class="navbar_item"><a href="#home" class="navbar_link">Home</a></li>
                 <li class="navbar_item"><a href="#projects" class="navbar_link">Projects</a></li>
                 <li class="navbar_item"><a href="#about" class="navbar_link">About</a></li>
-                <li class="navbar_item"><a href="#play" class="navbar_link">Play</a></li>
                 <li class="navbar_item"><a href="#contact" class="navbar_link">Contact</a></li>
             </ul>
         </nav>
@@ -168,12 +167,26 @@
             <h1>About</h1>
         </section>
         
-        <section id="play">
-            <h1>Pong Game</h1>
-        </section>
-        
         <section id="contact">
             <h1>Contact</h1>
+            <div class="contact_methods">
+                    <img class="social_icon" src="assets/images/icons/emailIcon_white.png">
+                    <p>gf.givaldofernandes@gmail.com</p>
+            </div>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="user_email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
             <footer>
                 Made with ❤️️ by me 
                 <div class="fork-btn nav-item" hidden>
@@ -198,6 +211,7 @@
         w3.includeHTML();
     </script>
 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="assets/js/typewriter.js"></script>
     <script src="assets/js/card.js"></script>
