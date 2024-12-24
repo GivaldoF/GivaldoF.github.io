@@ -14,6 +14,12 @@ body{
     font-family: "Public Sans", sans-serif;
 }
 
+.highlight{
+    color: var(--secundary-color);
+    font-weight: bold;
+}
+
+
 #container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -52,6 +58,7 @@ section{
    
     
 }
+
 .home_photo{
     width: 350px;
     height: 350px;
@@ -68,8 +75,31 @@ section{
     font-weight: 500;
 }
 
-#about{
-  
+
+.about_text{
+    display: flex;
+    width: 60%;
+    max-height: 70%;
+    flex-direction: column;
+    line-height: 1.5;
+    text-align: left;
+    overflow-y: auto;
+
+    margin-top: 30px;
+}
+
+.about_text::-webkit-scrollbar{
+    width: 15px;
+}
+
+.about_text::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: var(--secundary-color);
+} 
+
+.about_text::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background: var(--primary-color-darker);
 }
 
 h1{
@@ -159,9 +189,6 @@ h1{
     
 }
 
-#play{
-    
-}
 
 .contact_methods{
     display: flex;

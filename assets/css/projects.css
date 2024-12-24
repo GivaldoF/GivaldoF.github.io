@@ -24,6 +24,7 @@ html::-webkit-scrollbar-track {
 
 body{
     font-family: var(--font-main);
+    line-height: 1.5;
 }
 
 h1, h2, h3{
@@ -34,6 +35,13 @@ header {
     display: flex;
     position: relative;
 }
+
+.highlight{
+    color: var(--secundary-color);
+    font-weight: bold;
+}
+
+
 /* BACKGROUND */
 .page-background {
     position: fixed;
@@ -354,11 +362,6 @@ header {
 
 .development-text{
     padding: var(--spacing-unit);
-}
-
-.highlight{
-    color: var(--secundary-color);
-    font-weight: bold;
 }
 
 li{
